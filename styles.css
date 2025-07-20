@@ -1,0 +1,145 @@
+/*Base*/
+* {
+  margin: 0;
+}
+
+body{
+  font-family: 'Segoe UI', sans-serif;
+}
+
+header {
+  background-color: #9b30b5;
+  color: white;
+  display: flex;
+  Justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+header img{
+  border-radius: 50%;
+}
+
+/*Navigation*/
+ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  float: left;
+  a{
+  margin: 1rem 0 0 2rem;
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.2rem;
+  }
+}
+
+nav a:hover, #current {
+  background-color:#fff;
+  color: #6A0DAD;
+  font-weight: bold;
+}
+
+main {
+  text-align: center;
+  background: url(mybackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*main Hero section*/
+#home p {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+#profile-pic {
+  width:180px;  
+  border-radius: 50%;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+}
+
+.highlight{
+  color: #6a0d6aad;
+  font-family: 'Segoe UI',cursive;
+}
+
+/*sidebar&aside*/
+#about div {
+  display: inline-block;
+  
+}
+
+#sidebar {
+  width: 50%;
+  background-color: #f2f2f2;
+  padding:20px;
+  margin:20px;
+  border-radius:1rem;
+  color: #6a0d6aad;
+  font-weight: bold;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+#aside {
+  width: 30%;
+  padding: 20px;
+  margin: 20px;
+  border-radius:1rem;
+  background-color:#6a0d6aad;
+  color:white;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  bottom: 50px;
+}
+
+#contact {
+  ul li {
+    font-weight: bold;
+    padding: 0 10px;
+    margin: 15px auto;
+  }
+  padding: 2rem;
+  text-align: left;
+  margin-left: 20px;
+}
+
+#inspirers {
+  p {
+    border: 1px solid gray;
+  }
+  padding: 1.5rem;
+}
+
+/*footer*/
+footer{
+  background-color: #da49b3;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+/*=====media querie=====*/
+@media(max-width:768px) {
+  #sidebar, #aside{
+     display: block;
+     width: 70%;
+     float:none;
+     margin:10px;
+  }
+  
+  main {
+     padding: 1.5rem 1rem;
+  }
+  
+  footer{
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+}
