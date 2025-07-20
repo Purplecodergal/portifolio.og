@@ -34,7 +34,24 @@
             <source src="./vidoes/thislife.mp4" type="video/mp4">
                 your browser does not support this media
         </video>
-    </main>
+    
+<div id="quote-box" style="margin: 20px 0; padding: 15px; border: 1px solid #ccc; background: #f9f9f9;">
+  <p id="quote-text">Click the button to see a random quote!</p>
+  <button onclick="showRandomQuote()">Show Quote</button>
+</div>
+<script>
+  const quotes = [
+    "The best way to get started is to quit talking and begin doing.",
+    "Success is not in what you have, but who you are.",
+    "Don’t let yesterday take up too much of today.",
+    "The future depends on what you do today.",
+    "Opportunities don't happen, you create them."
+  ];
+  function showRandomQuote() {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    document.getElementById('quote-text').textContent = quotes[randomIndex];
+  }
+</script></main>
 
     <footer>
         <p> &copy; 2025 my website</p>
