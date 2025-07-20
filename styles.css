@@ -94,8 +94,6 @@ main {
   background-color:#6a0d6aad;
   color:white;
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3);
-  position: relative;
-  bottom: 50px;
 }
 
 #contact {
